@@ -4,12 +4,15 @@ declared-services:
     label: conversation
     plan: free
 applications:
+- services
+  - conversation-service
 - name: car-dashboard
   command: npm start
   path: .
   memory: 256M
   instances: 1
   disk_quota: 1024M
+  
   env:
     NPM_CONFIG_PRODUCTION: false
 
