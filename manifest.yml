@@ -6,7 +6,7 @@ declared-services:
 applications:
 - services
   - conversation-service
-- name: car-dashboard
+  name: car-dashboard
   command: npm start
   path: .
   memory: 256M
